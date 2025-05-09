@@ -15,3 +15,7 @@ sh install-docker.sh --dry-run
 sudo sh install-docker.sh
 
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server --docker --disable traefik --write-kubeconfig-mode=644" sh -s -
+
+echo ""
+echo ""
+echo "######   TOKEN is $(cat /var/lib/rancher/k3s/server/token)  ########"
